@@ -1,0 +1,219 @@
+:root {
+  --bg: #0b0e13;
+  --bg-soft: #11151d;
+  --panel: #161b25;
+  --text: #e9edf4;
+  --text-muted: #93a0b4;
+  --accent: #2f8fff;      /* azul, como el logo de la referencia */
+  --warning: #f5c518;     /* amarillo para ofertas/CTA */
+  --border: #232a37;
+}
+
+.top-bar {
+  background-color: var(--panel);
+  color: var(--text-muted);
+}
+
+.hero-carousel { background-color: #05070a; }
+
+.hero-slide {
+  height: 480px;
+  color: var(--text);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 7, 10, 0.55);
+}
+
+.hero-slide .container {
+  position: relative;
+  z-index: 2;
+}
+
+.product-img-real {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  padding: 8px;
+}
+
+#catalogo {
+  padding: 3rem 0;
+}
+
+.footer-depot {
+  margin-top: 2rem;
+}
+
+.hero-slide h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 900;
+}
+
+.product-img {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--accent);
+  background: var(--bg-soft);
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.badge-offer {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--warning);
+  color: #111;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.card-product { position: relative; }
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+.navbar-hud {
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-hud .navbar-brand {
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.navbar-hud .nav-link {
+  color: var(--text-muted);
+  margin: 0 0.7rem;
+}
+
+.navbar-hud .nav-link:hover,
+.navbar-hud .nav-link.active {
+  color: var(--accent);
+}
+
+.icons-nav {
+  color: var(--text);
+  font-size: 1.1rem;
+}
+
+/* TEXTO DEL HERO */
+.eyebrow {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+}
+
+/* CARDS DE PRODUCTO */
+.card-product {
+  background: var(--panel);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.card-product .price {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* FOOTER */
+.footer-depot {
+  background-color: var(--panel);
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.footer-depot a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-depot a:hover {
+  color: var(--accent);
+}
+
+.footer-depot .social {
+  font-size: 1.2rem;
+}
+.footer-depot p.text-muted {
+  color: #ffffff; 
+}
+
+.bg-panel {
+  background-color: var(--panel);
+}
+
+.section-eyebrow {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+}
+
+.section-title {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.text-muted {
+  color: #93a0b4 !important;
+}
+#formAlert {
+  display: none;
+}
+@media (max-width: 768px) {
+  .hero-slide {
+    background-position: top center;
+    height: 380px;
+  }
+}
+.filter-box {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.filter-box h6 {
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.filter-box .form-check-input:checked {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.filter-box .form-control {
+  background-color: var(--bg-soft);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.filter-box .form-check-label {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}

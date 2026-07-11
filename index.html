@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zona Click | Periféricos Gamer</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- BARRA SUPERIOR -->
+  <div class="top-bar text-center py-1 small">
+    Los mejores periféricos gamer al mejor precio — Comprá con envío gratis
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-hud">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="bi bi-controller me-2"></i> ZONA CLICK
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="teclados.html">Teclados</a></li>
+          <li class="nav-item"><a class="nav-link" href="mouse.html">Mouse</a></li>
+          <li class="nav-item"><a class="nav-link" href="mousepads.html">Mousepad</a></li>
+          <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link text-warning" href="#catalogo">Ofertas</a></li>
+       </ul>
+        <div class="d-flex gap-3 icons-nav">
+          <i class="bi bi-search"></i>
+          <i class="bi bi-person"></i>
+          <i class="bi bi-cart3"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- PRESENTACIÓN BREVE -->
+  <section class="bg-panel text-center py-5">
+    <div class="container">
+      <p class="section-eyebrow">Quiénes somos</p>
+      <h2 class="section-title">Somos ZONA CLICK</h2>
+      <p class="text-muted mx-auto" style="max-width:640px;">
+        Una tienda especializada en periféricos gamer, armada por jugadores para jugadores.
+        Elegimos cada producto probándolo primero: si no lo usaríamos nosotros, no lo vendemos.
+      </p>
+    </div>
+  </section>
+  <!-- HERO / CARRUSEL -->
+  <header class="hero-carousel">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero-slide d-flex align-items-center" style="background-image: url('img/MouseCarrusel.webp');">
+            <div class="container">
+              <p class="eyebrow">// Nueva colección</p>
+              <h1>EQUÍPATE PARA<br>LA VICTORIA</h1>
+              <p class="lead">Los mejores periféricos para cada setup.</p>
+              <a href="#catalogo" class="btn btn-warning fw-bold px-4">Comprar ahora</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-slide d-flex align-items-center" style="background-image: url('img/TecladoCarrusel.webp');">
+            <div class="container">
+              <p class="eyebrow">// Ofertas</p>
+              <h1>HASTA 30% OFF<br>EN TECLADOS</h1>
+              <p class="lead">Por tiempo limitado.</p>
+              <a href="#catalogo" class="btn btn-warning fw-bold px-4">Ver ofertas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CATÁLOGO -->
+  <section id="catalogo">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-6 col-lg-3">
+          <div class="card-product">
+            <span class="badge-offer">OFERTA</span>
+            <img src="img/Teclado1.webp" alt="Teclado Apex RGB" class="product-img-real">
+            <h6>Teclado</h6>
+            <p class="price">$78.000</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="card-product">
+            <img src="img/Mouse1.webp" alt="Ratón DeathAdder V3" class="product-img-real">
+            <h6>Mouse</h6>
+            <p class="price">$45.000</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="card-product">
+            <span class="badge-offer">-15%</span>
+            <img src="img/Mousepad1.webp" alt="Alfombrilla Control" class="product-img-real">
+            <h6>Mousepad</h6>
+            <p class="price">$18.000</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-3">
+          <div class="card-product">
+            <img src="img/Auriculares1.webp" alt="Auriculares Stealth 700" class="product-img-real">
+            <h6>Auriculares</h6>
+            <p class="price">$62.500</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer-depot">
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5 class="d-flex align-items-center mb-3">
+            <i class="bi bi-controller me-2"></i> ZONA CLICK
+          </h5>
+          <p class="text-muted small">Periféricos gamer para todos los niveles de juego.</p>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h6 class="text-uppercase small mb-3">Navegación</h6>
+          <ul class="list-unstyled small">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="text-uppercase small mb-3">Seguinos</h6>
+          <a href="#" class="social me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social me-3"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="social"><i class="bi bi-envelope-fill"></i></a>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center text-muted small mb-0 pb-3"> 2026 ZONA CLICK. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
